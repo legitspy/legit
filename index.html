@@ -373,8 +373,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <body>
 
     <!-- Add your HTML content here -->
-    <a href="tel:+2347037744333" class="call-button">
-        <img src="https://www.freeiconspng.com/uploads/the-phone-icon-has-now-grown-to-a-similar-status-how-many-phones-have--1.png" class="phone-icon">+2347037744333
+    <a href="tel:+13658000280" class="call-button">
+        <img src="https://www.freeiconspng.com/uploads/the-phone-icon-has-now-grown-to-a-similar-status-how-many-phones-have--1.png" class="phone-icon">+13658000280
     </a>
 
 </body>
@@ -1130,11 +1130,23 @@ _waEmbed(wa_btnSetting, wa_widgetSetting);
 <div class="floating-widget">
   <img class="icon" src="https://www.pngall.com/wp-content/uploads/13/Instagram-Logo-PNG-Pic.png" alt="Instagram" onclick="window.location.href='https://www.instagram.com/'">
   <img class="icon" src="https://www.pngall.com/wp-content/uploads/5/Facebook-Messenger-Logo-PNG-High-Quality-Image.png" alt="Facebook Messenger" onclick="window.location.href='https://www.messenger.com/'">
-  <img class="icon" src="https://www.freeiconspng.com/uploads/sms-text-message-icon-0.png" alt="SMS" onclick="window.location.href='sms:+2347037744333'">
-  <img class="icon" src="https://www.freeiconspng.com/uploads/the-phone-icon-has-now-grown-to-a-similar-status-how-many-phones-have--1.png" alt="Phone Call" onclick="window.location.href='tel:+2347037744333'">
+  <img class="icon" src="https://www.freeiconspng.com/uploads/sms-text-message-icon-0.png" alt="SMS" onclick="window.location.href='sms:+13658000280'">
+  <img class="icon" src="https://www.freeiconspng.com/uploads/the-phone-icon-has-now-grown-to-a-similar-status-how-many-phones-have--1.png" alt="Phone Call" onclick="window.location.href='tel:+13658000280'">
 </div>
 
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var toggleButtons = document.querySelectorAll('.faq__toggle-btn');
+
+        toggleButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var faqItem = this.parentNode.nextElementSibling;
+                faqItem.classList.toggle('active');
+            });
+        });
+    });
+</script>
 
 </body></html>
